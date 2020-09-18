@@ -23,6 +23,7 @@ body {
 .title {
   text-align: center;
   letter-spacing: 5px;
+  font-size: 2rem;
 }
 
 
@@ -46,6 +47,17 @@ body {
   display: flex;  
   justify-content: center;
   align-items: center;
+}
+
+.image-container {
+  margin: 10px auto;
+  width: 90%;
+  max-width: 500px;
+}
+
+.image-container img {
+  margin-top: 5px;
+  width: 100%;
 }
 
 
