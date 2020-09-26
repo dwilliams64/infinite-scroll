@@ -5,16 +5,16 @@ async function getPhoto () {
     const apiKey = "vscw6nORBCCN5yF_URyeRiN1u8WNV3mdltE5NxMThYA";
     const apiUrl = `https://api.unsplash.com/photos/random?client_id=${apiKey}&count=${pictureCount}`;
     
-    try {
+    // try {
 
-        const response = await fetch(apiUrl);
-        const data = await response.json();
+    //     const response = await fetch(apiUrl);
+    //     const data = await response.json();
 
-        console.log(data);
+    //     console.log(data);
 
-    } catch (error) {
-        console.log(error);
-    }
+    // } catch (error) {
+    //     console.log(error);
+    // }
 
     
 

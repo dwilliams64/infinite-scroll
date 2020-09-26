@@ -26,11 +26,53 @@ body {
   font-size: 2rem;
 }
 
+.gallery-contianer {
+  /* margin: 10px auto;
+  width: 90%;
+  max-width: 500px; */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  
+  /* grid-template-rows: 400px 400px; */
+}
+
 
 /*************** 
   Components
 
 ****************/
+
+/* Card */
+
+.card {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+div.card-image {
+  background-size: cover;
+  background-position: center;
+  padding-bottom: 60%;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+img {
+  /* width: 54%; */
+  height: 300px;
+  object-fit: contain;
+}
+
+.img-container {
+  /* height: 300px; */
+}
+
+.img-container img {
+  width: 100%;
+  height: auto;
+}
 
 /* Loader  */
 
@@ -49,7 +91,7 @@ body {
   align-items: center;
 }
 
-.image-container {
+/* .image-container {
   margin: 10px auto;
   width: 90%;
   max-width: 500px;
@@ -58,6 +100,6 @@ body {
 .image-container img {
   margin-top: 5px;
   width: 100%;
-}
+} */
 
 

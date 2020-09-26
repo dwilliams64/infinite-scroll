@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Infinite Scroll</title>
+    <title>Image Gallery</title>
     <link rel="icon" type="image/png" href="favicon.png">
     
     <!-- Old Favicon - Grab Icon From Google (Might be unsupported in the future) -->
@@ -13,8 +13,106 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!-- Title -->
-    <h1 class="title">Infinite Scroll</h1>
+    <!-- Title Bar -->
+    <!-- <div class="title-bar">
+        <div id="refresh-page" class="refresh-page"></div>
+        <h1 class="title-bar__title">Infinite Scroll</h1>
+    </div> -->
+
+    <!-- 
+        https://static.zerochan.net/Shimakaze.%28Azur.Lane%29.full.2681173.jpg
+        https://images.unsplash.com/photo-1600080972464-8e5f35f63d08?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80
+        https://i.redd.it/ydpgakkjwkq21.jpg
+        https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/users-2.png
+        https://images.unsplash.com/photo-1600194991511-4181a2a9bc7c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80
+        https://cdn.donmai.us/sample/08/2e/__shimakaze_azur_lane_drawn_by_honyaru_nanairo39__sample-082e78bc2df2c804170623dfd3965a87.jpg
+     -->
+
+    <div class="gallery-contianer">
+
+        <div id="card" class="card">
+            <div class="img-container"><img src="https://static.zerochan.net/Shimakaze.%28Azur.Lane%29.full.2681173.jpg" alt=""></div>
+            <!-- <div class="card-image" style="background-image: url(https://static.zerochan.net/Shimakaze.%28Azur.Lane%29.full.2681173.jpg);"></div> -->
+            <div class="class-content">
+                <div class="card-title">Dog</div>
+                <div class="card-author">Chris Redfield</div>
+            </div>
+        </div>
+
+ 
+        <div id="card" class="card">
+            <div class="img-container"><img src="https://images.unsplash.com/photo-1600080972464-8e5f35f63d08?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80" alt=""></div>
+            <!-- <div class="card-image" style="background-image: url(https://images.unsplash.com/photo-1600080972464-8e5f35f63d08?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80);"></div> -->
+            <div class="class-content">
+                <div class="card-title">Dog</div>
+                <div class="card-author">Chris Redfield</div>
+            </div>
+        </div>
+
+        <div id="card" class="card"> 
+            <div class="img-container">
+              <img src="https://i.redd.it/ydpgakkjwkq21.jpg" alt="">  
+            </div>           
+            <!-- <div class="card-image" style="background-image: url(https://i.redd.it/ydpgakkjwkq21.jpg);"></div> -->
+            <div class="class-content">
+                <div class="card-title">Dog</div>
+                <div class="card-author">Chris Redfield</div>
+            </div>
+        </div>
+
+        <div id="card" class="card">
+            <div class="img-container"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/users-2.png" alt=""></div>
+            <!-- <div class="card-image" style="background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/users-2.png)"></div> -->
+            <div class="class-content">
+                <div class="card-title">Dog</div>
+                <div class="card-author">Chris Redfield</div>
+            </div>
+        </div>
+
+        <div id="card" class="card">
+            <div class="img-container">
+                <img src="https://images.unsplash.com/photo-1600194991511-4181a2a9bc7c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80" alt="">
+            </div>
+
+            <!-- <div class="card-image" style="background-image: url(https://images.unsplash.com/photo-1600194991511-4181a2a9bc7c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80);"></div> -->
+            <div class="class-content">
+                <div class="card-title">Dog</div>
+                <div class="card-author">Chris Redfield</div>
+            </div>
+        </div>
+
+        <div id="card" class="card">
+            <div class="img-container"><img src="https://static.zerochan.net/Shimakaze.%28Azur.Lane%29.full.2681173.jpg" alt=""></div>
+            
+            <!-- <div class="card-image" style="background-image: url(https://static.zerochan.net/Shimakaze.%28Azur.Lane%29.full.2681173.jpg);"></div> -->
+            <div class="class-content">
+                <div class="card-title">Dog</div>
+                <div class="card-author">Chris Redfield</div>
+            </div>
+        </div>
+
+        <div id="card" class="card">
+            <div class="img-container">
+                <img src="https://cdn.donmai.us/sample/08/2e/__shimakaze_azur_lane_drawn_by_honyaru_nanairo39__sample-082e78bc2df2c804170623dfd3965a87.jpg" alt="">
+            </div>
+            
+            <!-- <div class="card-image" style="background-image: url(https://cdn.donmai.us/sample/08/2e/__shimakaze_azur_lane_drawn_by_honyaru_nanairo39__sample-082e78bc2df2c804170623dfd3965a87.jpg);"></div> -->
+            <div class="class-content">
+                <div class="card-title">Dog</div>
+                <div class="card-author">Chris Redfield</div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <!-- Card Component -->
+
+
+
+    <!-- module -->
+    
 
     <!-- Loader -->
 
@@ -23,12 +121,15 @@
     </div> -->
 
     <!-- Image container -->
-    <div class="image-container" id="image-container">
+    <!-- <div class="image-container" id="image-container">
         <img src="https://images.unsplash.com/photo-1600080972464-8e5f35f63d08?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80" alt="">
         <img src="https://images.unsplash.com/photo-1600080972464-8e5f35f63d08?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80" alt="">
         <img src="https://images.unsplash.com/photo-1600080972464-8e5f35f63d08?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80" alt="">
         <img src="https://images.unsplash.com/photo-1600080972464-8e5f35f63d08?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80" alt="">
-    </div>
+    </div> -->
+
+    
+
 
     <!-- Script -->
     <script src="script.js"></script>
